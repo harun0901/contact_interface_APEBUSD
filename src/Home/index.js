@@ -225,7 +225,7 @@ function Home() {
             <Accordion.Item eventKey="5">
               <Accordion.Header>setBuyFee(_liquidityBuyFee, _marketingBuyFee, _charityBuyFee, _reflectionBuyFee)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set BuyFee</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>_liquidityBuyFee</Form.Label>
                   <Col>
@@ -275,7 +275,7 @@ function Home() {
             <Accordion.Item eventKey="6">
               <Accordion.Header>setDistributionCriteria(_minPeriod, _minDistribution)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set busd distribution lower time and limit</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>_minPeriod</Form.Label>
                   <Col>
@@ -305,7 +305,7 @@ function Home() {
             <Accordion.Item eventKey="7">
               <Accordion.Header>setDistributorSettings(gas)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>:Gas Fee set(Please do not change. If you want first let me know)</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>gas</Form.Label>
                   <Col>
@@ -325,7 +325,7 @@ function Home() {
             <Accordion.Item eventKey="8">
               <Accordion.Header>setFeeReceivers(_liquidityFeeReceiver, _marketingFeeReceiver, _charityFeeReceiver)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: FeeReciever wallet address</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>_liquidityFeeReceiver</Form.Label>
                   <Col>
@@ -389,7 +389,7 @@ function Home() {
             <Accordion.Item eventKey="10">
               <Accordion.Header>setIsFeeExempt(holder, exempt)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set wallet to exclude form fee</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>holder</Form.Label>
                   <Col>
@@ -419,7 +419,7 @@ function Home() {
             <Accordion.Item eventKey="11">
               <Accordion.Header>setIsTxLimitExempt(holder, exempt)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set wallet to exclude from transfer token limit</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>holder</Form.Label>
                   <Col>
@@ -449,7 +449,7 @@ function Home() {
             <Accordion.Item eventKey="12">
               <Accordion.Header>setpenaltyFee(_marketingPenaltyFee, _charityPenaltyFee, _reflectionPeanltyFee)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set PenaltyFee</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>_marketingPenaltyFee</Form.Label>
                   <Col>
@@ -494,7 +494,7 @@ function Home() {
             <Accordion.Item eventKey="0">
               <Accordion.Header>setPenaltyFeeFreeTime(_penaltyFreeTime_normal, _penaltyFreeTime_presale, _penaltyFreeTime_privatesale)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set penaltyFree time(sec)</p>
                 <Row className="mb-1">
                   <Form.Label column lg={5}>_penaltyFreeTime_normal</Form.Label>
                   <Col>
@@ -534,7 +534,7 @@ function Home() {
             <Accordion.Item eventKey="1">
               <Accordion.Header>setPresaleList(useraddrss)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set wallet to include in presalewalletlist</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>useraddrss</Form.Label>
                   <Col>
@@ -554,7 +554,7 @@ function Home() {
             <Accordion.Item eventKey="2">
               <Accordion.Header>setPrivateList(useraddrss)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set wallet to include privatesalelist</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>useraddrss</Form.Label>
                   <Col>
@@ -574,7 +574,7 @@ function Home() {
             <Accordion.Item eventKey="3">
               <Accordion.Header>setSellFee(_liquiditySellFee, _marketingSellFee, _charitySellFee, _reflectionSellFee)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set sellFee</p>
                 <Row className="mb-1">
                   <Form.Label column lg={4}>_liquiditySellFee</Form.Label>
                   <Col>
@@ -625,7 +625,7 @@ function Home() {
             <Accordion.Item eventKey="5">
               <Accordion.Header>setSwapBackSettings(_enabled, _amount)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set swapbacksetting</p>
 
                 <Row className="mb-1">
                   <Form.Label column lg={4}>_enabled</Form.Label>
@@ -656,7 +656,7 @@ function Home() {
             <Accordion.Item eventKey="6">
               <Accordion.Header>setTxLimit(amount)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Set transfer limit</p>
 
                 <Row className="mb-1">
                   <Form.Label column lg={4}>amount</Form.Label>
@@ -677,7 +677,7 @@ function Home() {
             <Accordion.Item eventKey="7">
               <Accordion.Header>transferOwnership(address)</Accordion.Header>
               <Accordion.Body>
-                <p><b>Description</b>: Get Holder Fees</p>
+                <p><b>Description</b>: Transfer ownership(Please do not send other address, if you do, you do not owner any more)</p>
 
                 <Row className="mb-1">
                   <Form.Label column lg={4}>address</Form.Label>
