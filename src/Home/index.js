@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useMemo, useState } from 'react';
 import { Accordion, Row, Col, Form, Button } from 'react-bootstrap';
 import BscDapp from '@obsidians/bsc-dapp';
-import {contractAddress} from '../Contract';
+// import {contractAddress} from '../Contract';
 import abi from '../Contract/abi.json';
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
   const [network, setNetwork] = useState();
 
   const [contractInfo, setContractInfo] = useState({
-    address: '0xbfC506855279a3cEa9955AB459e8C72961aDf438',
+    address: '0xB55811D5a92541E1E1f1e8756993FE9A6335EccF',
   })
 
   /****  here contract function params state  ***/
@@ -33,6 +33,7 @@ function Home() {
   const [setSwapBackSettingsParams, setSetSwapBackSettingsParams] = useState({_enabled: '', _amount: ''});
   const [setTxLimitParams, setSetTxLimitParams] = useState({amount: ''});
   const [transferOwnershipParams, setTransferOwnershipParams] = useState({address: ''});
+  const [setPresalerParams, setSetPresaler] = useState({address: ''});
   
   /*****/
   
@@ -210,6 +211,14 @@ function Home() {
       let params = Object.values(transferOwnershipParams);
       console.log(params);
       await execute('transferOwnership', params);
+    }
+  }
+
+  const setPresaler = async () => {
+    if (checkEnabled()) {
+      let params = Object.values(setPresalerParams);
+      console.log(params);
+      await execute('setPresaler', params);
     }
   }
 
@@ -691,6 +700,26 @@ function Home() {
 
                 <div className="text-end">
                   <Button variant="outline-warning" onClick={transferOwnership}>Transact</Button>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="8">
+              <Accordion.Header>setPresaleAddress(address)</Accordion.Header>
+              <Accordion.Body>
+                <p><b>Description</b>: Set presale address</p>
+
+                <Row className="mb-1">
+                  <Form.Label column lg={4}>address</Form.Label>
+                  <Col>
+                    <Form.Control type="text" placeholder="address" 
+                      value = {setPresalerParams.address}
+                      onChange={(e) => setSetPresaler({ ...setPresalerParams, address: e.target.value })}
+                    />
+                  </Col>
+                </Row>
+
+                <div className="text-end">
+                  <Button variant="outline-warning" onClick={setPresaler}>Transact</Button>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
